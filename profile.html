@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aika 自己紹介｜女性ビジネスコンサルタント</title>
+<meta name="description" content="Aika Business School 代表 Aika のプロフィール。お上品で本質を突く女性ビジネスコンサルタント。月商100万、最短ルート。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@500;700;900&family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="_brand.css">
+<style>
+  .profile-hero{
+    background:linear-gradient(135deg,var(--pink-light) 0%,var(--pink) 100%);
+    padding:80px 24px 60px;position:relative;overflow:hidden;
+  }
+  .profile-hero::before,.profile-hero::after{
+    content:"";position:absolute;border:1px solid var(--gold);border-radius:50%;
+    opacity:.2;
+  }
+  .profile-hero::before{width:280px;height:280px;top:-100px;left:-80px}
+  .profile-hero::after{width:200px;height:200px;bottom:-60px;right:-40px}
+
+  .profile-inner{
+    max-width:880px;margin:0 auto;
+    display:grid;gap:50px;
+    grid-template-columns:1fr 1.2fr;align-items:center;
+    position:relative;z-index:2;
+  }
+  @media(max-width:720px){
+    .profile-inner{grid-template-columns:1fr;text-align:center}
+  }
+  .profile-photo{
+    width:100%;aspect-ratio:3/4;max-width:340px;margin:0 auto;
+    border-radius:16px;overflow:hidden;
+    box-shadow:0 30px 60px rgba(31,44,76,.2);
+    border:4px solid var(--gold);
+    background:linear-gradient(135deg,#fff,var(--paper));
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--display);color:var(--navy);font-size:5rem;
+    position:relative;
+  }
+  .profile-photo img{width:100%;height:100%;object-fit:cover;display:block}
+  .profile-photo .placeholder-note{
+    position:absolute;bottom:8px;font-size:.55rem;
+    color:var(--gray);font-family:var(--sans);font-weight:500;
+    background:rgba(255,255,255,.9);padding:2px 8px;border-radius:4px;letter-spacing:.05em;
+  }
+
+  .profile-info .eyebrow{
+    font-family:var(--display);color:var(--navy);
+    font-size:.85rem;letter-spacing:.3em;margin-bottom:14px;font-weight:600;
+  }
+  .profile-info .eyebrow::before{
+    content:"";display:inline-block;width:30px;height:1px;
+    background:var(--navy);vertical-align:middle;margin-right:12px;
+  }
+  .profile-info h1{
+    font-family:var(--display);font-weight:700;font-size:clamp(2.8rem,6vw,4rem);
+    color:var(--navy);line-height:1.1;margin-bottom:6px;letter-spacing:.02em;
+  }
+  .profile-info .role{
+    font-family:var(--serif);font-weight:700;color:var(--gold);
+    font-size:.95rem;letter-spacing:.1em;margin-bottom:20px;
+  }
+  .profile-info .tag{
+    background:var(--navy);color:#fff;padding:14px 22px;border-radius:8px;
+    margin-top:10px;border-left:3px solid var(--gold);
+  }
+  .profile-info .tag .label{
+    font-family:var(--display);color:var(--gold-light);font-size:.7rem;
+    letter-spacing:.2em;margin-bottom:4px;
+  }
+  .profile-info .tag .text{
+    font-family:var(--serif);font-weight:900;font-size:1.05rem;line-height:1.5;
+  }
+
+  .timeline{
+    margin-top:20px;padding-left:0;
+  }
+  .timeline-item{
+    display:grid;gap:20px;grid-template-columns:120px 1fr;
+    padding:18px 0;border-bottom:1px dashed rgba(201,169,97,.3);
+  }
+  .timeline-year{
+    font-family:var(--display);color:var(--gold);font-weight:700;
+    font-size:1.05rem;letter-spacing:.05em;
+  }
+  .timeline-content h4{
+    font-family:var(--serif);font-weight:900;color:var(--navy);
+    font-size:.95rem;margin-bottom:4px;
+  }
+  .timeline-content p{font-size:.82rem;color:var(--gray);line-height:1.8}
+
+  .achievement-grid{
+    display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    margin-top:30px;
+  }
+  .achievement-item{
+    background:#fff;padding:24px 18px;border-radius:10px;
+    border:1px solid rgba(201,169,97,.3);text-align:center;
+  }
+  .achievement-item .num{
+    font-family:var(--display);color:var(--gold);font-size:2.4rem;
+    font-weight:700;line-height:1;margin-bottom:6px;
+  }
+  .achievement-item .label{
+    font-family:var(--serif);font-weight:900;color:var(--navy);
+    font-size:.8rem;letter-spacing:.05em;
+  }
+
+  .photo-gallery{
+    display:grid;gap:14px;margin-top:30px;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  }
+  .gallery-frame{
+    aspect-ratio:3/4;border-radius:10px;
+    background:linear-gradient(135deg,var(--pink-light),var(--pink));
+    border:2px solid var(--gold);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--display);color:var(--navy-light);font-size:.85rem;
+    text-align:center;padding:14px;letter-spacing:.05em;
+    position:relative;overflow:hidden;
+  }
+  .gallery-frame img{width:100%;height:100%;object-fit:cover;display:block}
+  .gallery-frame::before{
+    content:"PHOTO";font-family:var(--display);color:var(--gold);
+    font-size:.7rem;letter-spacing:.3em;
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    opacity:.5;
+  }
+  .gallery-frame.has-img::before{display:none}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="gold">— PROFILE —</span> &nbsp;月商<span class="gold">100万</span>、最短ルート。
+</div>
+
+<!-- HERO with photo -->
+<section class="profile-hero">
+  <div class="profile-inner">
+    <div class="profile-photo">
+      <img src="photos/01_kimono.jpg" alt="Aika" onerror="this.style.display='none';this.parentNode.innerHTML+='A'">
+      <span class="placeholder-note">photos/01_kimono.jpg</span>
+    </div>
+    <div class="profile-info">
+      <div class="eyebrow">FOUNDER / CONSULTANT</div>
+      <h1>Aika</h1>
+      <div class="role">女性ビジネスコンサルタント®</div>
+
+      <p style="font-size:.92rem;color:var(--navy);line-height:1.95;margin-top:10px">
+        感覚で走ってきた女性起業家を、<br>
+        「経営」のステージへ引き上げる<br>
+        ── 本質を突く言葉で、お上品に。
+      </p>
+
+      <div class="tag">
+        <div class="label">CATCHPHRASE</div>
+        <div class="text">月商100万、最短ルート。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENT NUMBERS -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow">ACHIEVEMENTS</div>
+    <h2 class="section-title">これまでの実績</h2>
+    <div class="section-divider"></div>
+
+    <div class="achievement-grid">
+      <div class="achievement-item">
+        <div class="num">10<small style="font-size:.5em">年</small></div>
+        <div class="label">コンサル<br>キャリア</div>
+      </div>
+      <div class="achievement-item">
+        <div class="num">100<small style="font-size:.5em">名+</small></div>
+        <div class="label">受講生<br>累計サポート</div>
+      </div>
+      <div class="achievement-item">
+        <div class="num">1000<small style="font-size:.5em">万+</small></div>
+        <div class="label">受講生<br>最高年商</div>
+      </div>
+      <div class="achievement-item">
+        <div class="num">8<small style="font-size:.5em">桁</small></div>
+        <div class="label">自身の<br>年商実績</div>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:30px;font-size:.78rem;color:var(--gray-light)">
+      ※数値は概算です。<a href="https://1vqzv.hp.peraichi.com/" target="_blank" style="color:var(--gold);text-decoration:underline">受講生実績の詳細はこちら</a>
+    </p>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section>
+  <div class="wrap-narrow">
+    <div class="section-eyebrow">PHILOSOPHY</div>
+    <h2 class="section-title">私がコンサルをする<br><span class="gold">理由</span></h2>
+    <div class="section-divider"></div>
+
+    <div class="card">
+      <p style="line-height:2;color:var(--ink);font-size:.95rem">
+        女性起業のマーケットには、<br>
+        「とにかく頑張ろう」「マインドが大事」という <span style="color:var(--gray)">ふわっとした言葉</span> が溢れています。<br><br>
+        でも、それでは月商100万円の壁は、絶対に超えられません。<br><br>
+        必要なのは、<b style="color:var(--gold)">経営の数字</b> と <b style="color:var(--gold)">売れる仕組み</b>、そして <b style="color:var(--gold)">自分の核を言語化する力</b>。<br><br>
+        私のコンサルは、人を立てながら、本質をちゃんと言うスタイル。<br>
+        だから <b style="color:var(--navy)">「お上品で、本質を突く」</b>。<br><br>
+        感覚だけで走るのは、ここまで。<br>
+        次は <b style="color:var(--gold)">「戦略」</b> で勝つ番です。
+      </p>
+      <p style="text-align:right;margin-top:30px;font-family:var(--display);font-size:1.4rem;color:var(--navy);font-weight:700">
+        Aika
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="alt">
+  <div class="wrap-narrow">
+    <div class="section-eyebrow">CAREER</div>
+    <h2 class="section-title">これまでの歩み</h2>
+    <div class="section-divider"></div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">起業初期</div>
+        <div class="timeline-content">
+          <h4>女性起業の世界へ</h4>
+          <p>マーケティング・セールスの実務経験を経て、女性起業家向けのコンサルティングを開始。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">成長期</div>
+        <div class="timeline-content">
+          <h4>独自メソッドの確立</h4>
+          <p>「商品設計 × 集客 × クロージング × マインド」の4軸メソッドを体系化。月商100万超の受講生を多数輩出。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">拡大期</div>
+        <div class="timeline-content">
+          <h4>年商8桁・海外進出</h4>
+          <p>受講生の中から年商1000万超を多数達成。海外（屋久島・バリ等）にも活動拠点を広げる。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">現在</div>
+        <div class="timeline-content">
+          <h4>Aika Business School</h4>
+          <p>本気で「月商100万、最短ルート」を実現したい女性のために、本講座・養成講座・単発コンサルを展開中。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+  <div class="wrap">
+    <div class="section-eyebrow">GALLERY</div>
+    <h2 class="section-title">Aikaの日常</h2>
+    <div class="section-divider"></div>
+
+    <div class="photo-gallery">
+      <div class="gallery-frame has-img"><img src="photos/02_flower_smile.jpg" alt="" onerror="this.parentNode.classList.remove('has-img');this.remove()"></div>
+      <div class="gallery-frame has-img"><img src="photos/03_tearoom_navy.jpg" alt="" onerror="this.parentNode.classList.remove('has-img');this.remove()"></div>
+      <div class="gallery-frame has-img"><img src="photos/04_garden.jpg" alt="" onerror="this.parentNode.classList.remove('has-img');this.remove()"></div>
+      <div class="gallery-frame has-img"><img src="photos/05_flower_laugh.jpg" alt="" onerror="this.parentNode.classList.remove('has-img');this.remove()"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="dark">
+  <div class="wrap-narrow" style="text-align:center">
+    <div class="section-eyebrow">NEXT STEP</div>
+    <h2 class="section-title" style="color:#fff">
+      まずは <span class="gold">90分</span>、<br>
+      Aikaと話してみませんか
+    </h2>
+
+    <div class="cta-wrap" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:40px">
+      <a href="free_consult.html" class="btn primary">無料個別相談 ›</a>
+      <a href="single_session.html" class="btn secondary" style="background:#fff;color:var(--navy)">単発コース ›</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="logo">Aika <span class="gold">Business</span> School</div>
+  <div class="tagline">NEXT STAGE FOR WOMEN ENTREPRENEURS</div>
+  <div class="links">
+    <a href="https://7yy2b.hp.peraichi.com/" target="_blank">本講座</a>
+    <a href="https://f9dmf.hp.peraichi.com/" target="_blank">養成講座</a>
+    <a href="https://1vqzv.hp.peraichi.com/" target="_blank">受講生の声</a>
+    <a href="https://cqgt3.hp.peraichi.com/" target="_blank">特典詳細</a>
+  </div>
+  <div class="copyright">© Aika Consultant. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
