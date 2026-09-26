@@ -1,0 +1,260 @@
+<!-- ============================================================
+  RE:ROOT YAKUSHIMA｜コンサル軸LP用「公式LINE限定特典」パーツ
+  特典：Aikaの個別コンサル1回（10万円相当）／リトリート後、お好きなタイミングで
+
+  ■ 貼り付け方（WordPressの「カスタムHTML」ブロック／HTMLファイルの直接編集、どちらでも可）
+    1) 【パーツA】… LPの「料金」セクションのすぐ後（FAQの前）に貼り付け
+    2) 【パーツB】… 料金表示のすぐ下／最後の申込ボタンの上など、申込直前の場所に貼り付け（任意・複数OK）
+       ※パーツBの見た目はパーツA内の <style> を使います。パーツAも必ず同じページに入れてください。
+    3) 「★差し替え」の2か所を本番のURLに変更
+       ★差し替え① 申込フォームのURL（LPの既存の申込ボタンと同じURL）
+       ★差し替え② 公式LINE（コンサル軸）の友だち追加URL
+
+  ■ 注意
+    ・文中の「公式LINE」は、コンサル軸の公式LINEを指します。
+      この特典はコンサル軸LINEだけの特典なので、他の軸のLP・LINEには入れないでください。
+    ・受け取り方（公式LINEに「リトリート特典」と送信）は、LINE配信文（retreat/line_messages.md）と揃えています。
+      変えるときは両方を修正してください。
+============================================================ -->
+
+
+<!-- ▼▼▼【パーツA】特典セクション ここから ▼▼▼ -->
+<style>
+/* クラス名はすべて rr- で始まり、LPの他の部分には影響しません。
+   .rr-bonus.rr-bonus のようにクラスを重ねているのは、WordPressテーマの余白・見出し装飾に負けないようにするためです。 */
+.rr-bonus,.rr-strip{
+  --rr-navy:#1F2C4C;--rr-navy-2:#2E3D63;
+  --rr-gold:#C9A961;--rr-gold-2:#E0C98E;--rr-gold-ink:#8A6A24;
+  --rr-paper:#FBF4EE;--rr-ink:#2A2A2A;--rr-muted:#5F5F5F;--rr-wine:#8B1E3F;
+  --rr-serif:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;
+  --rr-sans:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic","YuGothic",Meiryo,sans-serif;
+  --rr-display:"Cormorant Garamond","Noto Serif JP",serif;
+}
+.rr-bonus.rr-bonus,.rr-strip.rr-strip{
+  font-family:var(--rr-sans);font-size:16px;line-height:1.85;color:var(--rr-ink);
+  text-align:left;-webkit-text-size-adjust:100%;
+  word-break:auto-phrase;overflow-wrap:anywhere; /* 対応ブラウザでは文節で改行 */
+}
+.rr-bonus.rr-bonus *,.rr-bonus.rr-bonus *::before,.rr-bonus.rr-bonus *::after,
+.rr-strip.rr-strip *,.rr-strip.rr-strip *::before,.rr-strip.rr-strip *::after{
+  box-sizing:border-box;margin:0;padding:0;border:0;background:none;box-shadow:none;float:none;
+}
+.rr-bonus.rr-bonus h2::before,.rr-bonus.rr-bonus h2::after,
+.rr-bonus.rr-bonus h3::before,.rr-bonus.rr-bonus h3::after{content:none;display:none}
+
+/* ---- セクション ---- */
+.rr-bonus.rr-bonus{
+  position:relative;overflow:hidden;margin:0;padding:64px 0 72px;scroll-margin-top:24px;
+  background:linear-gradient(180deg,var(--rr-paper) 0%,#fff 100%);
+}
+.rr-bonus.rr-bonus::before,.rr-bonus.rr-bonus::after{
+  content:"";position:absolute;border:1px solid var(--rr-gold);border-radius:50%;opacity:.25;pointer-events:none;
+}
+.rr-bonus.rr-bonus::before{width:260px;height:260px;top:-110px;left:-90px}
+.rr-bonus.rr-bonus::after{width:180px;height:180px;bottom:-70px;right:-50px}
+.rr-bonus .rr-bonus__inner{position:relative;z-index:1;max-width:720px;margin:0 auto;padding:0 20px}
+
+/* ---- 見出し ---- */
+.rr-bonus .rr-bonus__eyebrow{
+  font-family:var(--rr-display);font-weight:700;font-size:.85em;letter-spacing:.3em;white-space:nowrap;
+  color:var(--rr-gold-ink);text-align:center;margin-bottom:10px;
+}
+.rr-bonus .rr-bonus__eyebrow::before,.rr-bonus .rr-bonus__eyebrow::after{
+  content:"";display:inline-block;width:24px;height:1px;background:var(--rr-gold);vertical-align:middle;margin:0 10px;
+}
+.rr-bonus .rr-bonus__title{
+  font-family:var(--rr-serif);font-weight:900;font-size:clamp(1.2em,5.4vw,2.1em);
+  line-height:1.55;letter-spacing:.04em;color:var(--rr-navy);text-align:center;
+}
+.rr-bonus .rr-bonus__title em{
+  font-style:normal;padding:0 4px;background:linear-gradient(transparent 62%,var(--rr-gold-2) 62%);
+}
+.rr-bonus .rr-bonus__divider{display:block;width:56px;height:1px;margin:20px auto 22px;background:var(--rr-gold)}
+.rr-bonus .rr-bonus__lead{font-size:.95em;line-height:2;color:var(--rr-navy-2);text-align:center}
+
+/* ---- 特典カード ---- */
+.rr-bonus .rr-bonus__card{
+  margin-top:36px;overflow:hidden;background:#fff;border:2px solid var(--rr-gold);border-radius:18px;
+  box-shadow:0 18px 44px rgba(31,44,76,.12);
+}
+.rr-bonus .rr-bonus__plaque{
+  position:relative;padding:30px 20px 28px;text-align:center;color:#fff;
+  background:linear-gradient(135deg,var(--rr-navy) 0%,var(--rr-navy-2) 100%);border-bottom:2px solid var(--rr-gold);
+}
+.rr-bonus .rr-bonus__ribbon{
+  display:inline-block;padding:4px 16px;border-radius:999px;
+  background:linear-gradient(135deg,var(--rr-gold),var(--rr-gold-2));color:var(--rr-navy);
+  font-family:var(--rr-display);font-weight:700;font-size:.8em;letter-spacing:.2em;line-height:1.6;
+}
+.rr-bonus .rr-bonus__name{
+  margin-top:16px;font-family:var(--rr-serif);font-weight:900;font-size:clamp(1.25em,5vw,1.6em);
+  line-height:1.5;letter-spacing:.04em;color:#fff;
+}
+.rr-bonus .rr-bonus__value{
+  margin-top:4px;font-family:var(--rr-serif);font-weight:900;font-size:1.15em;line-height:1.2;color:var(--rr-gold);
+}
+.rr-bonus .rr-bonus__num{
+  font-family:var(--rr-serif);font-weight:900;font-size:2.6em;line-height:1;margin-right:4px;vertical-align:-.04em;
+  font-variant-numeric:lining-nums;
+}
+.rr-bonus .rr-bonus__timing{
+  display:inline-block;margin-top:16px;padding:4px 16px;border:1px solid rgba(224,201,142,.55);border-radius:999px;
+  font-size:.82em;letter-spacing:.06em;color:var(--rr-gold-2);
+}
+.rr-bonus .rr-bonus__body{padding:28px 18px 30px}
+.rr-bonus .rr-bonus__h3{
+  margin-bottom:18px;font-family:var(--rr-serif);font-weight:900;font-size:clamp(.98em,4.6vw,1.2em);
+  line-height:1.7;color:var(--rr-navy);text-align:center;
+}
+.rr-bonus .rr-bonus__text{font-size:.94em;line-height:2}
+.rr-bonus .rr-bonus__text + .rr-bonus__text{margin-top:14px}
+.rr-bonus .rr-bonus__text b{
+  font-weight:700;color:var(--rr-navy);background:linear-gradient(transparent 65%,rgba(224,201,142,.55) 65%);
+}
+
+/* ---- ご相談例 ---- */
+.rr-bonus .rr-bonus__uses{
+  margin-top:24px;padding:18px 18px 10px;background:var(--rr-paper);
+  border-left:3px solid var(--rr-gold);border-radius:0 12px 12px 0;
+}
+.rr-bonus .rr-bonus__uses-title{font-family:var(--rr-serif);font-weight:900;font-size:.95em;color:var(--rr-navy)}
+.rr-bonus .rr-bonus__uses ul{list-style:none;margin:6px 0 0;padding:0}
+.rr-bonus .rr-bonus__uses li{
+  position:relative;padding:9px 0 9px 26px;font-size:.9em;line-height:1.75;
+  border-bottom:1px dashed rgba(201,169,97,.45);
+}
+.rr-bonus .rr-bonus__uses li:last-child{border-bottom:0}
+.rr-bonus .rr-bonus__uses li::before{
+  content:"❖";position:absolute;left:4px;top:9px;width:auto;height:auto;border-radius:0;transform:none;
+  font-size:.85em;line-height:2;color:var(--rr-gold);
+}
+
+/* ---- 特典の詳細 ---- */
+.rr-bonus .rr-bonus__spec{margin-top:26px;border-top:1px solid rgba(201,169,97,.45)}
+.rr-bonus .rr-bonus__row{
+  display:grid;grid-template-columns:6.5em 1fr;gap:12px;padding:13px 2px;
+  border-bottom:1px solid rgba(201,169,97,.45);
+}
+.rr-bonus .rr-bonus__row dt{font-family:var(--rr-serif);font-weight:900;font-size:.85em;line-height:2;color:var(--rr-navy)}
+.rr-bonus .rr-bonus__row dd{font-size:.9em;line-height:1.85}
+.rr-bonus .rr-bonus__row dd strong{font-weight:700;color:var(--rr-wine)}
+.rr-bonus .rr-bonus__kw{
+  display:inline-block;margin:0 3px;padding:0 8px;border-radius:6px;background:var(--rr-navy);
+  color:#fff;font-weight:700;line-height:1.7;white-space:nowrap;
+}
+
+/* ---- 申込ボタン ---- */
+.rr-bonus .rr-bonus__cta{margin-top:34px;text-align:center}
+.rr-bonus a.rr-bonus__btn{
+  display:block;width:100%;max-width:420px;margin:0 auto;padding:18px 24px;border-radius:999px;
+  background:linear-gradient(135deg,var(--rr-gold) 0%,var(--rr-gold-2) 100%);box-shadow:0 8px 24px rgba(201,169,97,.45);
+  color:var(--rr-navy);font-family:var(--rr-serif);font-weight:900;font-size:1.02em;letter-spacing:.08em;
+  line-height:1.5;text-align:center;text-decoration:none;transition:transform .2s,box-shadow .2s;
+}
+.rr-bonus a.rr-bonus__btn:hover,.rr-bonus a.rr-bonus__btn:focus-visible{
+  color:var(--rr-navy);transform:translateY(-2px);box-shadow:0 14px 30px rgba(201,169,97,.55);
+}
+.rr-bonus a.rr-bonus__btn span{margin-left:8px}
+.rr-bonus .rr-bonus__sub{margin-top:16px;font-size:.8em;line-height:1.9;color:var(--rr-muted)}
+.rr-bonus .rr-bonus__sub a{color:var(--rr-navy);text-decoration:underline;text-underline-offset:3px}
+.rr-bonus .rr-bonus__note{margin-top:14px;font-size:.75em;line-height:1.8;color:var(--rr-muted)}
+
+/* ---- パーツB：料金・申込ボタン付近の帯 ---- */
+.rr-strip.rr-strip{
+  max-width:640px;margin:20px auto;padding:14px 18px;text-align:center;background:#fff;
+  border:1.5px solid var(--rr-gold);border-radius:12px;box-shadow:0 6px 18px rgba(31,44,76,.08);
+}
+.rr-strip .rr-strip__tag{
+  display:inline-block;padding:2px 12px;border-radius:999px;background:var(--rr-navy);
+  color:var(--rr-gold-2);font-size:.75em;font-weight:700;letter-spacing:.1em;line-height:1.7;
+}
+.rr-strip .rr-strip__main{
+  margin-top:8px;font-family:var(--rr-serif);font-weight:900;font-size:1.05em;line-height:1.6;color:var(--rr-navy);
+}
+.rr-strip .rr-strip__main em{font-style:normal;color:var(--rr-wine)}
+.rr-strip .rr-strip__ib{display:inline-block}
+.rr-strip .rr-strip__cond{margin-top:4px;font-size:.8em;line-height:1.7;color:var(--rr-muted)}
+.rr-strip a.rr-strip__link{
+  display:inline-block;margin-top:6px;font-size:.8em;color:var(--rr-gold-ink);
+  text-decoration:underline;text-underline-offset:3px;
+}
+
+@media (min-width:600px){
+  .rr-bonus .rr-bonus__plaque::before,.rr-bonus .rr-bonus__plaque::after{
+    content:"❖";position:absolute;top:50%;transform:translateY(-50%);color:var(--rr-gold);font-size:1.1em;
+  }
+  .rr-bonus .rr-bonus__plaque::before{left:22px}
+  .rr-bonus .rr-bonus__plaque::after{right:22px}
+  .rr-bonus .rr-bonus__body{padding:36px 40px 38px}
+}
+@media (max-width:359px){
+  .rr-bonus .rr-bonus__eyebrow{letter-spacing:.18em}
+  .rr-bonus .rr-bonus__eyebrow::before,.rr-bonus .rr-bonus__eyebrow::after{width:14px;margin:0 6px}
+  .rr-bonus .rr-bonus__plaque{padding:26px 14px 24px}
+  .rr-bonus .rr-bonus__timing{font-size:.74em;letter-spacing:0;padding:4px 12px}
+}
+@media (max-width:480px){
+  .rr-bonus .rr-bonus__row{grid-template-columns:1fr;gap:2px;padding:12px 2px}
+  .rr-bonus .rr-bonus__row dt{font-size:.78em;line-height:1.8;letter-spacing:.08em;color:var(--rr-gold-ink)}
+}
+</style>
+
+<section id="rr-bonus" class="rr-bonus" aria-labelledby="rr-bonus-title">
+  <div class="rr-bonus__inner">
+    <p class="rr-bonus__eyebrow">LINE MEMBERS ONLY</p>
+    <h2 id="rr-bonus-title" class="rr-bonus__title">公式LINEにご登録の方だけの<br><em>特別な特典</em></h2>
+    <span class="rr-bonus__divider" aria-hidden="true"></span>
+    <p class="rr-bonus__lead">リトリートのあと、<br>屋久島で見つけた答えを<br>あなたの事業に落とし込むまで、<br>私が1対1でご一緒します。</p>
+
+    <div class="rr-bonus__card">
+      <div class="rr-bonus__plaque">
+        <span class="rr-bonus__ribbon">SPECIAL BONUS</span>
+        <p class="rr-bonus__name">Aikaの個別コンサル 1回</p>
+        <p class="rr-bonus__value"><span class="rr-bonus__num">10</span>万円相当</p>
+        <p class="rr-bonus__timing">リトリート後、お好きなタイミングで</p>
+      </div>
+
+      <div class="rr-bonus__body">
+        <h3 class="rr-bonus__h3">屋久島で決めたことを、<br>帰ってから「売上」に変える時間</h3>
+        <p class="rr-bonus__text">屋久島の森で“根っこ”が整うと、本当に大切にしたいことが見えてきます。でも日常に戻ると、その感覚は少しずつ薄れていくもの。だからこそ、<b>リトリートは帰ってからが本番</b>です。</p>
+        <p class="rr-bonus__text">リトリートを終えたら、あなたのタイミングで一度、私と1対1で。屋久島で見つけた答えを商品・価格・発信に落とし込み、売上につながる「次の一手」まで一緒に設計します。</p>
+
+        <div class="rr-bonus__uses">
+          <p class="rr-bonus__uses-title">たとえば、こんなご相談に</p>
+          <ul>
+            <li>屋久島で決めたことを、商品設計と価格に落とし込む</li>
+            <li>帰ってから3ヶ月の行動計画（ロードマップ）をつくる</li>
+            <li>集客導線・発信・個別相談の流れを見直す</li>
+          </ul>
+        </div>
+
+        <dl class="rr-bonus__spec">
+          <div class="rr-bonus__row"><dt>特典内容</dt><dd>Aikaによる個別コンサル（1回）</dd></div>
+          <div class="rr-bonus__row"><dt>価値</dt><dd><strong>10万円相当</strong></dd></div>
+          <div class="rr-bonus__row"><dt>受けられる時期</dt><dd>リトリート終了後、お好きなタイミングで1回</dd></div>
+          <div class="rr-bonus__row"><dt>対象</dt><dd>公式LINEにご登録のうえ、リトリートにお申込みいただいた方</dd></div>
+          <div class="rr-bonus__row"><dt>受け取り方</dt><dd>お申込み後、公式LINEに<span class="rr-bonus__kw">リトリート特典</span>とメッセージをお送りください</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="rr-bonus__cta">
+      <!-- ★差し替え① 申込フォームのURL（LPの既存の申込ボタンと同じURL） -->
+      <a class="rr-bonus__btn" href="#apply">特典付きで申し込む<span aria-hidden="true">›</span></a>
+      <!-- ★差し替え② 公式LINE（コンサル軸）の友だち追加URL -->
+      <p class="rr-bonus__sub">公式LINEにまだご登録でない方は、<br><a href="https://lin.ee/your-line-id">こちらから先にご登録</a>ください。</p>
+      <p class="rr-bonus__note">※本特典は、公式LINEにご登録の方限定のご案内です。</p>
+    </div>
+  </div>
+</section>
+<!-- ▲▲▲【パーツA】ここまで ▲▲▲ -->
+
+
+<!-- ▼▼▼【パーツB】料金表示の下・申込ボタンの上に置く帯 ここから（パーツAの <style> を使います） ▼▼▼ -->
+<div class="rr-strip">
+  <span class="rr-strip__tag">LINE限定特典</span>
+  <p class="rr-strip__main"><span class="rr-strip__ib">Aikaの個別コンサル1回</span><span class="rr-strip__ib"><em>（10万円相当）</em>付き</span></p>
+  <p class="rr-strip__cond">公式LINEにご登録のうえ、お申込みの方へ</p>
+  <a class="rr-strip__link" href="#rr-bonus">特典の詳細を見る ↓</a>
+</div>
+<!-- ▲▲▲【パーツB】ここまで ▲▲▲ -->
