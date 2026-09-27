@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>植物と暮らす蒸留講座｜3ヶ月コース</title>
+<meta name="description" content="身近な植物やハーブを自分の手で蒸留し、香りを暮らしに取り入れる3ヶ月の講座。オンライン講義と対面実習のハイブリッドで、はじめての方もていねいに学べます。">
+<meta property="og:title" content="植物と暮らす蒸留講座｜3ヶ月コース">
+<meta property="og:description" content="摘んだ植物を、香りの水に。オンライン講義＋対面実習で学ぶ、3ヶ月の蒸留講座。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   植物と暮らす蒸留講座 — LP
+   Palette: 月桃（白 × 若葉色 × 桃色）
+   ============================================================ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --white:#FFFDF9;
+  --cream:#F7F3EA;
+  --leaf-deep:#2F5233;
+  --leaf:#4A7A3C;
+  --wakaba:#A9C98A;
+  --wakaba-pale:#EEF4E2;
+  --momo:#E89A9F;
+  --momo-deep:#C4586A;
+  --momo-pale:#FBECEA;
+  --kiiro:#E2B04A;
+  --ink:#33392F;
+  --muted:#686E62;
+  --line:rgba(74,122,60,.18);
+  --serif:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  --en:"Cormorant Garamond",serif;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{
+  font-family:var(--sans);background:var(--white);color:var(--ink);
+  line-height:1.9;overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.wrap-narrow{max-width:720px;margin:0 auto;padding:0 20px}
+.sp-only{display:inline}
+h1,h2,h3,h4,.lead,.sec-lead,.bridge,.message,.btn-note,.note{word-break:auto-phrase}
+@media(min-width:768px){.sp-only{display:none}}
+
+/* 要確認（仮）の箇所。内容が確定したらこのクラスごと外す */
+.tbd{
+  background:#FFF4C9;border-bottom:1px dashed #C9A43A;
+  padding:0 4px;border-radius:2px;color:#6B5412;font-weight:700;
+}
+
+/* ===== Top bar ===== */
+.topbar{
+  background:var(--leaf-deep);color:#fff;text-align:center;
+  padding:9px 16px;font-size:.78rem;letter-spacing:.12em;
+}
+.topbar b{color:var(--momo);font-weight:700}
+
+/* ===== Hero ===== */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(ellipse 60% 50% at 85% 20%,var(--momo-pale) 0%,transparent 70%),
+    radial-gradient(ellipse 70% 60% at 0% 100%,var(--wakaba-pale) 0%,transparent 70%),
+    var(--white);
+  padding:40px 0 64px;
+}
+.hero-grid{display:grid;gap:8px;align-items:center}
+.hero-art{max-width:250px;margin:0 auto;width:100%}
+.hero-copy{text-align:center}
+.eyebrow{
+  font-family:var(--en);font-style:italic;font-weight:600;
+  color:var(--leaf);letter-spacing:.12em;font-size:1.05rem;
+}
+.hero h1{
+  font-family:var(--serif);font-weight:800;color:var(--leaf-deep);
+  font-size:clamp(2rem,7.4vw,3.4rem);line-height:1.45;letter-spacing:.06em;
+  margin:10px 0 14px;
+}
+.hero h1 .momo{color:var(--momo-deep)}
+.hero .course-name{
+  display:inline-block;font-family:var(--serif);font-weight:700;
+  color:var(--ink);font-size:clamp(1rem,3.6vw,1.25rem);letter-spacing:.14em;
+  padding:6px 0;border-top:1px solid var(--wakaba);border-bottom:1px solid var(--wakaba);
+}
+.hero .lead{
+  margin:22px auto 0;max-width:520px;color:var(--muted);
+  font-size:.95rem;line-height:2.05;
+}
+.badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:24px}
+.badge{
+  font-size:.78rem;font-weight:700;letter-spacing:.06em;
+  padding:6px 14px;border-radius:999px;background:#fff;
+  border:1px solid var(--wakaba);color:var(--leaf);
+}
+.badge.momo{border-color:var(--momo);color:var(--momo-deep)}
+@media(min-width:880px){
+  .hero{padding:72px 0 96px}
+  .hero-grid{grid-template-columns:1.1fr .9fr;gap:40px}
+  .hero-copy{text-align:left;order:1}
+  .hero-art{order:2;max-width:420px}
+  .hero .lead{margin-left:0}
+  .badges{justify-content:flex-start}
+  .hero .cta-wrap{text-align:left}
+}
+
+/* ===== Buttons ===== */
+.cta-wrap{text-align:center;margin-top:32px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-width:min(100%,320px);padding:18px 36px;border-radius:999px;
+  font-family:var(--serif);font-weight:800;font-size:1.05rem;letter-spacing:.1em;
+  text-decoration:none;color:#fff;
+  background:linear-gradient(135deg,#D46A79 0%,var(--momo-deep) 100%);
+  box-shadow:0 10px 24px rgba(196,88,106,.28);
+  transition:transform .2s,box-shadow .2s;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(196,88,106,.34)}
+.btn .arrow{font-family:var(--sans);font-size:1.2rem;line-height:1}
+.btn-note{display:block;margin-top:10px;font-size:.78rem;color:var(--muted)}
+
+/* ===== Section common ===== */
+section{padding:72px 0;position:relative}
+section.cream{background:var(--cream)}
+section.leaf{background:var(--wakaba-pale)}
+.sec-head{text-align:center;margin-bottom:40px}
+.sec-head .eyebrow{display:block;margin-bottom:6px}
+.sec-title{
+  font-family:var(--serif);font-weight:800;color:var(--leaf-deep);
+  font-size:clamp(1.45rem,4.6vw,2.1rem);line-height:1.6;letter-spacing:.06em;
+}
+.sec-title .momo{color:var(--momo-deep)}
+.sprig{display:block;width:64px;height:22px;margin:14px auto 0;color:var(--wakaba)}
+.sec-lead{
+  max-width:600px;margin:18px auto 0;color:var(--muted);font-size:.95rem;line-height:2.05;
+}
+@media(min-width:768px){section{padding:96px 0}}
+
+/* ===== Empathy ===== */
+.worries{
+  list-style:none;background:#fff;border-radius:18px;padding:12px 22px;
+  box-shadow:0 6px 24px rgba(47,82,51,.06);
+}
+.worries li{
+  position:relative;padding:16px 0 16px 36px;font-size:.95rem;line-height:1.8;
+  border-bottom:1px dashed var(--line);
+}
+.worries li:last-child{border-bottom:none}
+.worries li::before{
+  content:"";position:absolute;left:4px;top:22px;width:18px;height:18px;border-radius:50%;
+  background:var(--momo-pale);border:1.5px solid var(--momo);
+}
+.worries li::after{
+  content:"";position:absolute;left:10px;top:26px;width:6px;height:9px;
+  border:solid var(--momo-deep);border-width:0 2px 2px 0;transform:rotate(45deg);
+}
+.bridge{
+  text-align:center;margin-top:40px;font-family:var(--serif);font-weight:700;
+  color:var(--leaf-deep);font-size:clamp(1.05rem,3.8vw,1.3rem);line-height:2;
+}
+.bridge .momo{color:var(--momo-deep)}
+
+/* ===== About distillation ===== */
+.flow{display:grid;gap:14px;counter-reset:flow}
+.flow-step{
+  background:#fff;border-radius:16px;padding:22px 20px;
+  display:grid;grid-template-columns:64px 1fr;gap:16px;align-items:center;
+  border:1px solid var(--line);position:relative;
+}
+.flow-step .ico{
+  width:64px;height:64px;border-radius:50%;background:var(--wakaba-pale);
+  display:flex;align-items:center;justify-content:center;color:var(--leaf);
+}
+.flow-step .ico svg{width:36px;height:36px}
+.flow-step .num{
+  font-family:var(--en);font-style:italic;color:var(--momo-deep);font-size:.95rem;font-weight:600;
+}
+.flow-step h3{font-family:var(--serif);font-weight:800;color:var(--leaf-deep);font-size:1.05rem;line-height:1.5}
+.flow-step p{font-size:.85rem;color:var(--muted);line-height:1.8;margin-top:2px}
+@media(min-width:880px){
+  .flow{grid-template-columns:repeat(4,1fr);gap:18px}
+  .flow-step{grid-template-columns:1fr;text-align:center;padding:30px 20px}
+  .flow-step .ico{margin:0 auto 4px;width:76px;height:76px}
+  .flow-step:not(:last-child)::after{
+    content:"";position:absolute;right:-14px;top:66px;width:10px;height:10px;
+    border:solid var(--wakaba);border-width:2px 2px 0 0;transform:rotate(45deg);
+  }
+}
+.result{
+  margin-top:28px;background:#fff;border-radius:18px;padding:26px 22px;
+  display:grid;gap:18px;border:1.5px solid var(--momo);
+}
+.result-item{display:flex;gap:14px;align-items:flex-start}
+.result-item .dot{
+  flex-shrink:0;width:14px;height:14px;border-radius:50%;margin-top:8px;
+  background:var(--wakaba);box-shadow:0 0 0 4px var(--wakaba-pale);
+}
+.result-item .dot.oil{background:var(--kiiro);box-shadow:0 0 0 4px #FBF1D9}
+.result-item h4{font-family:var(--serif);font-weight:800;color:var(--leaf-deep);font-size:1rem}
+.result-item p{font-size:.88rem;color:var(--muted);line-height:1.85}
+@media(min-width:768px){.result{grid-template-columns:1fr 1fr;padding:30px 34px}}
+
+/* ===== Life cards ===== */
+.life-grid{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+.life-card{
+  background:#fff;border-radius:16px;padding:22px 16px;text-align:center;
+  box-shadow:0 6px 20px rgba(47,82,51,.06);
+}
+.life-card .ico{
+  width:56px;height:56px;margin:0 auto 12px;border-radius:50%;
+  background:var(--momo-pale);color:var(--momo-deep);
+  display:flex;align-items:center;justify-content:center;
+}
+.life-card .ico svg{width:30px;height:30px}
+.life-card h3{font-family:var(--serif);font-weight:800;color:var(--leaf-deep);font-size:.98rem;line-height:1.5;margin-bottom:6px}
+.life-card p{font-size:.8rem;color:var(--muted);line-height:1.8;text-align:left}
+@media(min-width:880px){.life-grid{grid-template-columns:repeat(4,1fr);gap:20px}.life-card{padding:30px 22px}}
+
+/* ===== Features ===== */
+.features{display:grid;gap:18px}
+.feature{
+  background:#fff;border-radius:18px;padding:28px 24px 26px;position:relative;
+  border-top:4px solid var(--wakaba);box-shadow:0 6px 20px rgba(47,82,51,.05);
+}
+.feature .no{
+  font-family:var(--en);font-style:italic;font-weight:600;color:var(--momo-deep);
+  font-size:.95rem;letter-spacing:.1em;
+}
+.feature h3{
+  font-family:var(--serif);font-weight:800;color:var(--leaf-deep);
+  font-size:1.15rem;line-height:1.6;margin:4px 0 10px;
+}
+.feature p{font-size:.9rem;color:var(--muted);line-height:1.95}
+@media(min-width:768px){.features{grid-template-columns:1fr 1fr;gap:22px}}
+
+/* ===== Curriculum ===== */
+.month-list{display:grid;gap:22px}
+.month{
+  background:#fff;border-radius:20px;overflow:hidden;
+  box-shadow:0 8px 26px rgba(47,82,51,.07);
+}
+.month-head{
+  display:flex;align-items:center;gap:16px;padding:20px 22px;
+  background:linear-gradient(135deg,var(--wakaba-pale) 0%,#fff 100%);
+  border-bottom:1px solid var(--line);
+}
+.month-head .m{
+  flex-shrink:0;width:64px;height:64px;border-radius:50%;background:var(--leaf);color:#fff;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;
+}
+.month-head .m small{font-family:var(--en);font-style:italic;font-size:.72rem;letter-spacing:.08em}
+.month-head .m b{font-family:var(--en);font-size:1.7rem;font-weight:600}
+.month-head .theme{font-family:var(--en);font-style:italic;color:var(--momo-deep);font-size:.9rem;font-weight:600}
+.month-head h3{font-family:var(--serif);font-weight:800;color:var(--leaf-deep);font-size:1.15rem;line-height:1.5}
+.month-body{padding:20px 22px 24px}
+.month-body ul{list-style:none}
+.month-body li{
+  position:relative;padding:7px 0 7px 22px;font-size:.9rem;line-height:1.75;
+}
+.month-body li::before{
+  content:"";position:absolute;left:4px;top:15px;width:8px;height:8px;border-radius:50% 0;
+  background:var(--wakaba);transform:rotate(45deg);
+}
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tag{
+  font-size:.75rem;font-weight:700;padding:4px 12px;border-radius:999px;
+  background:var(--wakaba-pale);color:var(--leaf);
+}
+.tag.momo{background:var(--momo-pale);color:var(--momo-deep)}
+@media(min-width:880px){.month-list{grid-template-columns:repeat(3,1fr)}}
+
+/* monthly rhythm */
+.rhythm{
+  margin-top:40px;background:#fff;border-radius:20px;padding:28px 22px;
+  border:1.5px dashed var(--wakaba);
+}
+.rhythm h3{
+  text-align:center;font-family:var(--serif);font-weight:800;color:var(--leaf-deep);
+  font-size:1.1rem;margin-bottom:20px;
+}
+.rhythm ol{list-style:none;display:grid;gap:12px}
+.rhythm li{display:flex;gap:14px;align-items:flex-start}
+.rhythm .step{
+  flex-shrink:0;min-width:72px;text-align:center;font-size:.72rem;font-weight:700;
+  letter-spacing:.08em;color:#fff;background:var(--momo-deep);border-radius:999px;padding:4px 10px;margin-top:3px;
+}
+.rhythm li.offline .step{background:var(--leaf)}
+.rhythm h4{font-size:.95rem;font-weight:700;color:var(--ink);line-height:1.6}
+.rhythm p{font-size:.84rem;color:var(--muted);line-height:1.8}
+@media(min-width:880px){
+  .rhythm{padding:34px 36px}
+  .rhythm ol{grid-template-columns:repeat(4,1fr);gap:20px}
+  .rhythm li{flex-direction:column;align-items:center;text-align:center}
+}
+
+/* ===== Instructor ===== */
+.teacher{
+  background:#fff;border-radius:24px;padding:30px 22px;
+  box-shadow:0 10px 30px rgba(47,82,51,.08);display:grid;gap:24px;
+}
+.teacher-photo{
+  width:180px;height:180px;margin:0 auto;border-radius:50%;overflow:hidden;
+  background:var(--momo-pale);border:6px solid #fff;box-shadow:0 0 0 1.5px var(--momo);
+  display:flex;align-items:center;justify-content:center;color:var(--momo-deep);
+  font-size:.75rem;text-align:center;line-height:1.6;
+}
+.teacher-photo img{width:100%;height:100%;object-fit:cover}
+.teacher .role{font-family:var(--en);font-style:italic;color:var(--leaf);font-weight:600;letter-spacing:.08em}
+.teacher h3{font-family:var(--serif);font-weight:800;color:var(--leaf-deep);font-size:1.4rem;margin:2px 0 6px}
+.teacher .insta{
+  display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:700;
+  color:var(--momo-deep);text-decoration:none;
+}
+.teacher .insta svg{width:18px;height:18px}
+.teacher .profile{margin-top:14px;font-size:.9rem;line-height:2}
+.message{
+  margin-top:8px;padding:24px 22px;border-radius:16px;background:var(--cream);
+  font-family:var(--serif);font-size:.98rem;line-height:2.15;color:var(--ink);
+}
+.message p+p{margin-top:1em}
+.message .sign{text-align:right;margin-top:10px;font-weight:700;color:var(--leaf-deep)}
+@media(min-width:768px){
+  .teacher{grid-template-columns:220px 1fr;padding:44px 44px;align-items:start}
+  .teacher-photo{width:210px;height:210px}
+}
+
+/* ===== Details / Price ===== */
+.plan{
+  background:#fff;border-radius:24px;overflow:hidden;
+  box-shadow:0 18px 48px rgba(47,82,51,.12);border:1.5px solid var(--wakaba);
+}
+.plan-head{
+  text-align:center;padding:30px 20px 26px;color:#fff;
+  background:linear-gradient(135deg,var(--leaf) 0%,var(--leaf-deep) 100%);
+  position:relative;
+}
+.plan-head .eyebrow{color:var(--wakaba)}
+.plan-head h3{font-family:var(--serif);font-weight:800;font-size:1.5rem;letter-spacing:.08em;margin-top:4px}
+.plan-head .period{display:inline-block;margin-top:10px;font-size:.8rem;letter-spacing:.14em;padding:4px 14px;border:1px solid rgba(255,255,255,.5);border-radius:999px}
+.price{
+  text-align:center;padding:30px 20px 8px;
+}
+.price .label{font-size:.85rem;color:var(--muted);letter-spacing:.1em}
+.price .amount{
+  font-family:var(--serif);font-weight:800;color:var(--momo-deep);
+  font-size:clamp(2rem,8vw,2.8rem);line-height:1.3;letter-spacing:.02em;
+}
+.price .amount small{font-size:.9rem;color:var(--muted);font-weight:500;margin-left:4px}
+.price .note{font-size:.8rem;color:var(--muted);margin-top:4px}
+.spec{padding:10px 22px 8px}
+.spec dl{display:grid;grid-template-columns:1fr}
+.spec dt{
+  font-size:.8rem;font-weight:700;color:var(--leaf);letter-spacing:.08em;padding-top:14px;
+}
+.spec dd{font-size:.92rem;line-height:1.85;padding-bottom:14px;border-bottom:1px dashed var(--line)}
+.spec dd:last-of-type{border-bottom:none}
+.spec dd small{display:block;color:var(--muted);font-size:.8rem}
+@media(min-width:640px){
+  .spec{padding:10px 40px 8px}
+  .spec dl{grid-template-columns:140px 1fr}
+  .spec dt{padding:16px 0;border-bottom:1px dashed var(--line)}
+  .spec dd{padding:16px 0}
+  .spec dt:nth-last-of-type(1){border-bottom:none}
+}
+.plan .cta-wrap{margin:10px 0 0;padding:0 20px 34px}
+.prepare{
+  margin-top:28px;background:var(--wakaba-pale);border-radius:18px;padding:24px 22px;
+}
+.prepare h3{font-family:var(--serif);font-weight:800;color:var(--leaf-deep);font-size:1.05rem;margin-bottom:10px}
+.prepare ul{list-style:none}
+.prepare li{position:relative;padding:6px 0 6px 22px;font-size:.88rem;line-height:1.75}
+.prepare li::before{content:"";position:absolute;left:4px;top:15px;width:8px;height:8px;border-radius:50%;background:var(--leaf)}
+
+/* ===== FAQ ===== */
+.faq{display:grid;gap:12px}
+.faq details{background:#fff;border-radius:14px;border:1px solid var(--line);overflow:hidden}
+.faq summary{
+  list-style:none;cursor:pointer;padding:18px 48px 18px 52px;position:relative;
+  font-weight:700;font-size:.93rem;line-height:1.7;color:var(--ink);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{
+  content:"Q";position:absolute;left:18px;top:15px;font-family:var(--en);font-style:italic;
+  font-size:1.35rem;font-weight:600;color:var(--momo-deep);
+}
+.faq summary::after{
+  content:"";position:absolute;right:20px;top:24px;width:9px;height:9px;
+  border:solid var(--leaf);border-width:0 2px 2px 0;transform:rotate(45deg);transition:transform .2s;
+}
+.faq details[open] summary::after{transform:rotate(-135deg);top:28px}
+.faq .a{
+  padding:0 22px 20px 52px;font-size:.88rem;line-height:1.95;color:var(--muted);position:relative;
+}
+.faq .a::before{
+  content:"A";position:absolute;left:19px;top:-4px;font-family:var(--en);font-style:italic;
+  font-size:1.35rem;font-weight:600;color:var(--leaf);
+}
+
+/* ===== Final CTA ===== */
+.final{
+  text-align:center;overflow:hidden;
+  background:
+    radial-gradient(ellipse 60% 60% at 100% 0%,var(--momo-pale) 0%,transparent 70%),
+    radial-gradient(ellipse 60% 60% at 0% 100%,var(--wakaba-pale) 0%,transparent 70%),
+    var(--white);
+}
+.final .sec-title{font-size:clamp(1.5rem,5.2vw,2.3rem)}
+.final p.lead{margin:22px auto 0;max-width:520px;color:var(--muted);line-height:2.1;font-size:.95rem}
+.final .deadline{
+  display:inline-block;margin-top:26px;padding:8px 18px;border-radius:10px;
+  background:#fff;border:1px solid var(--momo);font-size:.85rem;color:var(--ink);
+}
+
+/* ===== Footer ===== */
+footer{background:var(--leaf-deep);color:rgba(255,255,255,.85);text-align:center;padding:44px 20px 110px}
+footer .logo{font-family:var(--serif);font-weight:700;font-size:1.1rem;letter-spacing:.12em;color:#fff}
+footer .by{font-size:.8rem;margin-top:4px}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:center;margin-top:20px;font-size:.78rem}
+footer .links a{color:rgba(255,255,255,.85)}
+footer .copy{margin-top:18px;font-size:.72rem;color:rgba(255,255,255,.6);letter-spacing:.06em}
+@media(min-width:880px){footer{padding-bottom:44px}}
+
+/* ===== Sticky CTA (mobile) ===== */
+.sticky-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(255,253,249,.94);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  border-top:1px solid var(--line);
+  transform:translateY(110%);transition:transform .3s;
+}
+.sticky-cta.show{transform:translateY(0)}
+.sticky-cta .btn{width:100%;min-width:0;padding:14px 20px;font-size:.98rem}
+@media(min-width:880px){.sticky-cta{display:none}}
+
+/* ===== Reveal ===== */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .btn,.sticky-cta{transition:none}
+}
+</style>
+</head>
+<body>
+
+<!-- 共通パーツ（SVG） -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="budGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".55" stop-color="#FFF7F4"/>
+      <stop offset=".8" stop-color="#F4C6C9"/>
+      <stop offset="1" stop-color="#DE8591"/>
+    </linearGradient>
+    <linearGradient id="leafGradA" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#6E9651"/>
+      <stop offset="1" stop-color="#A9C98A"/>
+    </linearGradient>
+    <linearGradient id="leafGradB" x1="0" y1="1" x2=".6" y2="0">
+      <stop offset="0" stop-color="#8DB36B"/>
+      <stop offset="1" stop-color="#C9DDAE"/>
+    </linearGradient>
+    <symbol id="bud" viewBox="-16 -24 32 54" overflow="visible">
+      <path d="M0,-22 C12,-22 16,-6 14,6 C12,18 5,26 0,28 C-5,26 -12,18 -14,6 C-16,-6 -12,-22 0,-22Z"
+            fill="url(#budGrad)" stroke="#E9D6CC" stroke-width="1"/>
+      <path d="M-6,-16 C-9,-6 -9,6 -5,16" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+    </symbol>
+    <symbol id="sprig" viewBox="0 0 64 22">
+      <path d="M2,11 H62" stroke="currentColor" stroke-width="1"/>
+      <path d="M32,11 C28,4 22,2 16,3 C20,8 26,11 32,11Z" fill="currentColor"/>
+      <path d="M32,11 C36,18 42,20 48,19 C44,14 38,11 32,11Z" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="topbar">植物と暮らす、3ヶ月の蒸留講座 ｜ <b>受講生募集中</b></div>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 460" role="img">
+        <circle cx="228" cy="240" r="168" fill="#FBECEA"/>
+        <circle cx="228" cy="240" r="188" fill="none" stroke="#E89A9F" stroke-width="1" stroke-dasharray="2 7" opacity=".7"/>
+        <!-- leaves -->
+        <path d="M20,450 C0,330 30,210 110,100 C120,230 90,350 20,450Z" fill="url(#leafGradB)"/>
+        <path d="M20,450 C40,330 70,220 110,100" fill="none" stroke="#fff" stroke-width="1.5" opacity=".7"/>
+        <path d="M40,450 C70,300 170,150 300,40 C280,170 170,330 40,450Z" fill="url(#leafGradA)"/>
+        <path d="M40,450 C110,320 200,170 300,40" fill="none" stroke="#fff" stroke-width="1.5" opacity=".6"/>
+        <path d="M70,455 C170,420 270,390 405,330 C315,420 190,462 70,455Z" fill="url(#leafGradB)"/>
+        <path d="M70,455 C190,440 300,400 405,330" fill="none" stroke="#fff" stroke-width="1.5" opacity=".7"/>
+        <!-- stems -->
+        <path d="M150,455 C180,300 220,150 250,70" fill="none" stroke="#6E9651" stroke-width="5" stroke-linecap="round"/>
+        <path d="M250,70 C300,90 330,150 330,220 C330,290 312,340 292,392" fill="none" stroke="#C4586A" stroke-width="3" stroke-linecap="round"/>
+        <!-- pedicels -->
+        <g stroke="#C4586A" stroke-width="1.6" stroke-linecap="round" fill="none">
+          <path d="M262,76 L270,84"/><path d="M284,94 L274,102"/><path d="M303,120 L315,126"/>
+          <path d="M317,152 L305,161"/><path d="M326,188 L339,195"/><path d="M330,226 L316,236"/>
+          <path d="M328,264 L342,274"/><path d="M320,304 L306,314"/><path d="M308,342 L322,354"/>
+          <path d="M294,380 L282,392"/>
+        </g>
+        <!-- buds -->
+        <use href="#bud" x="-16" y="-24" width="32" height="54" transform="translate(272,96) rotate(-30) scale(.45)"/>
+        <use href="#bud" x="-16" y="-24" width="32" height="54" transform="translate(271,116) rotate(25) scale(.55)"/>
+        <use href="#bud" x="-16" y="-24" width="32" height="54" transform="translate(320,142) rotate(-25) scale(.65)"/>
+        <use href="#bud" x="-16" y="-24" width="32" height="54" transform="translate(300,178) rotate(20) scale(.72)"/>
+        <use href="#bud" x="-16" y="-24" width="32" height="54" transform="translate(345,214) rotate(-20) scale(.8)"/>
+        <use href="#bud" x="-16" y="-24" width="32" height="54" transform="translate(310,256) rotate(18) scale(.88)"/>
+        <use href="#bud" x="-16" y="-24" width="32" height="54" transform="translate(348,296) rotate(-15) scale(.95)"/>
+        <use href="#bud" x="-16" y="-24" width="32" height="54" transform="translate(300,337) rotate(15) scale(1)"/>
+        <use href="#bud" x="-16" y="-24" width="32" height="54" transform="translate(327,378) rotate(-12) scale(1.02)"/>
+        <use href="#bud" x="-16" y="-24" width="32" height="54" transform="translate(277,416) rotate(10) scale(1.05)"/>
+        <!-- drops -->
+        <path d="M372,60 C372,60 360,76 360,84 A12,12 0 0 0 384,84 C384,76 372,60 372,60Z" fill="#fff" stroke="#A9C98A" stroke-width="1.5"/>
+        <path d="M396,120 C396,120 389,129 389,134 A7,7 0 0 0 403,134 C403,129 396,120 396,120Z" fill="#fff" stroke="#E89A9F" stroke-width="1.5"/>
+      </svg>
+    </div>
+
+    <div class="hero-copy">
+      <span class="eyebrow">Botanical Distillation Course</span>
+      <h1>摘んだ植物を、<br><span class="momo">香りの水</span>に。</h1>
+      <div class="course-name">植物と暮らす 蒸留講座 ─ 3ヶ月コース</div>
+      <p class="lead">
+        庭のハーブ、季節の花、散歩道の月桃。<br>
+        身近な植物を自分の手で蒸留すると、<br>
+        その植物がいちばん香る瞬間を、<br>
+        小さな瓶に閉じこめることができます。<br>
+        蒸留の基本から暮らしへの取り入れ方まで、<br>
+        オンライン講義と対面実習で、<br class="sp-only">ていねいに学ぶ3ヶ月です。
+      </p>
+      <div class="badges">
+        <span class="badge momo">はじめての方も歓迎</span>
+        <span class="badge">オンライン × 対面実習</span>
+        <span class="badge">3ヶ月コース</span>
+      </div>
+      <div class="cta-wrap">
+        <a href="#plan" class="btn">講座の詳細を見る <span class="arrow">›</span></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ EMPATHY ============ -->
+<section class="cream">
+  <div class="wrap-narrow">
+    <div class="sec-head reveal">
+      <span class="eyebrow">For you</span>
+      <h2 class="sec-title">植物が好き。<br>でも、こんな気持ちは<br class="sp-only">ありませんか？</h2>
+      <svg class="sprig"><use href="#sprig"/></svg>
+    </div>
+    <ul class="worries reveal">
+      <li>ハーブを育てているけれど、料理に少し使うだけで余らせてしまう</li>
+      <li>植物の香りに癒やされるけれど、暮らしへの取り入れ方がわからない</li>
+      <li>毎日肌につけるもの、部屋に置くものを、もっと自分で選びたい</li>
+      <li>蒸留に興味はあるけれど、むずかしそう・道具が本格的すぎそうで一歩が出ない</li>
+      <li>動画を見て独学で試してみたけれど、うまく香りが出なかった</li>
+      <li>季節のうつろいを、もっと五感で感じながら暮らしたい</li>
+    </ul>
+    <p class="bridge reveal">
+      その「好き」を、もう一歩深く。<br>
+      <span class="momo">蒸留</span>は、植物の香りと<br class="sp-only">いちばん近くで向き合える方法です。
+    </p>
+  </div>
+</section>
+
+<!-- ============ ABOUT DISTILLATION ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What is distillation</span>
+      <h2 class="sec-title">蒸留って、なに？</h2>
+      <svg class="sprig"><use href="#sprig"/></svg>
+      <p class="sec-lead">
+        植物を水といっしょに温め、<br class="sp-only">立ちのぼる蒸気を冷やして集めること。<br>
+        台所のコンロと小さな蒸留器があれば、<br class="sp-only">ご自宅でもはじめられます。
+      </p>
+    </div>
+
+    <div class="flow reveal">
+      <div class="flow-step">
+        <div class="ico" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 16h24v14a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4z"/><path d="M11 24c3-2 6 2 9 0s6 2 9 0"/>
+            <path d="M16 16c-1-5 1-9 5-11-1 4 0 8-2 11"/><path d="M22 16c1-4 4-6 8-6-2 3-3 5-6 6"/>
+          </svg>
+        </div>
+        <div>
+          <span class="num">Step 01</span>
+          <h3>植物と水を入れる</h3>
+          <p>摘んだ植物と水を、蒸留器の釜へ。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="ico" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 8h20v12a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4z"/>
+            <path d="M20 36c-4 0-6-3-6-6 0-3 3-4 3-7 2 2 3 3 3 5 1-1 2-2 2-4 2 2 4 4 4 6 0 3-2 6-6 6z"/>
+          </svg>
+        </div>
+        <div>
+          <span class="num">Step 02</span>
+          <h3>ゆっくり温める</h3>
+          <p>香りの成分が、湯気といっしょに立ちのぼります。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="ico" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 8h10"/><path d="M16 8c6 0 6 5 12 5M16 8c6 0 6 5 0 5s-6 5 0 5 6 5 12 5M28 13c-6 0-6 5 0 5"/>
+            <path d="M28 23v5"/><path d="M28 32c-1.5 0-2.5-1-2.5-2.2 0-1.3 2.5-3.8 2.5-3.8s2.5 2.5 2.5 3.8c0 1.2-1 2.2-2.5 2.2z"/>
+          </svg>
+        </div>
+        <div>
+          <span class="num">Step 03</span>
+          <h3>蒸気を冷やす</h3>
+          <p>冷やされた蒸気が、しずくになって落ちてきます。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="ico" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 4h8v6l4 5v17a4 4 0 0 1-4 4h-8a4 4 0 0 1-4-4V15l4-5z"/><path d="M12 20h16"/><path d="M12 23h16"/>
+          </svg>
+        </div>
+        <div>
+          <span class="num">Step 04</span>
+          <h3>香りの水ができる</h3>
+          <p>植物の香りをまとった水と、わずかな精油に。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="result reveal">
+      <div class="result-item">
+        <span class="dot" aria-hidden="true"></span>
+        <div>
+          <h4>芳香蒸留水（フローラルウォーター）</h4>
+          <p>植物の香りをやさしくまとった水。ほのかでやわらかく、植物ごと・季節ごとにまったく違う表情を見せてくれます。</p>
+        </div>
+      </div>
+      <div class="result-item">
+        <span class="dot oil" aria-hidden="true"></span>
+        <div>
+          <h4>精油（エッセンシャルオイル）</h4>
+          <p>蒸留水の表面にわずかに浮かぶ、植物の香りが凝縮された油分。たくさんの植物から、ほんの数滴だけ得られる貴重なものです。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIFE ============ -->
+<section class="leaf">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Life with distillation</span>
+      <h2 class="sec-title">蒸留のある暮らし</h2>
+      <svg class="sprig"><use href="#sprig"/></svg>
+      <p class="sec-lead">自分で蒸留した香りの水は、<br class="sp-only">毎日のいろいろな場面で使えます。</p>
+    </div>
+    <div class="life-grid reveal">
+      <div class="life-card">
+        <div class="ico" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="10" y="12" width="12" height="17" rx="3"/><path d="M13 12V8h6v4"/><path d="M19 8h3l2-2"/>
+            <path d="M26 6h1M26 9h2M26 3h1"/>
+          </svg>
+        </div>
+        <h3>朝のスキンケアに</h3>
+        <p>洗顔後のミストとして。摘みたての植物の香りで、一日をはじめられます。</p>
+      </div>
+      <div class="life-card">
+        <div class="ico" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 15 16 5l12 10"/><path d="M7 13v14h18V13"/><path d="M13 27v-7h6v7"/>
+          </svg>
+        </div>
+        <h3>お部屋やリネンに</h3>
+        <p>ルームスプレーや、アイロンがけのリネンウォーターに。空気がふっと変わります。</p>
+      </div>
+      <div class="life-card">
+        <div class="ico" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 16h24v4a7 7 0 0 1-7 7H11a7 7 0 0 1-7-7z"/><path d="M8 16V7a3 3 0 0 1 6 0"/>
+            <path d="M18 11c0-2 2-2 2-4M23 11c0-2 2-2 2-4"/><path d="M10 27l-1 2M22 27l1 2"/>
+          </svg>
+        </div>
+        <h3>お風呂の時間に</h3>
+        <p>湯船にそそいで、植物の香りに包まれるバスタイムを。</p>
+      </div>
+      <div class="life-card">
+        <div class="ico" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="12" width="22" height="16" rx="2"/><path d="M3 12h26v-4H3z"/><path d="M16 8v20"/>
+            <path d="M16 8c-2-4-7-5-7-2s5 2 7 2c2 0 7 1 7-2s-5-2-7 2"/>
+          </svg>
+        </div>
+        <h3>季節の贈りものに</h3>
+        <p>季節ごとに蒸留した一本を、大切な人へのちいさな贈りものに。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Features</span>
+      <h2 class="sec-title">この講座の<span class="momo">4つ</span>の特徴</h2>
+      <svg class="sprig"><use href="#sprig"/></svg>
+    </div>
+    <div class="features">
+      <div class="feature reveal">
+        <span class="no">Point 01</span>
+        <h3>オンライン講義 × 対面実習の<br>ハイブリッド</h3>
+        <p>知識はオンラインで、ご自宅から自分のペースで。そして対面実習では、実際に蒸留器にふれ、火加減や香りの変化を「手の感覚」で覚えます。動画だけではわからないコツを、その場で確かめられます。</p>
+      </div>
+      <div class="feature reveal">
+        <span class="no">Point 02</span>
+        <h3>季節の植物を、<br>3ヶ月かけてたくさん蒸留</h3>
+        <p>1回きりのワークショップではなく、3ヶ月かけて季節の移ろいとともにいろいろな植物を蒸留します。葉・花・果皮など、部位や植物による香りの違いを、自分の鼻で体感できます。</p>
+      </div>
+      <div class="feature reveal">
+        <span class="no">Point 03</span>
+        <h3>講座が終わっても、<br>自宅で続けられる</h3>
+        <p>ゴールは「講座の中でできた」ではなく「自宅の台所で、ひとりでできる」こと。推奨の蒸留器のご案内から、手順や記録のつけ方まで、ご自宅で再現できる形でお伝えします。</p>
+      </div>
+      <div class="feature reveal">
+        <span class="no">Point 04</span>
+        <h3>はじめてでも安心の、<br>ていねいなサポート</h3>
+        <p>火と蒸気を扱う蒸留は、最初に安全な扱い方と衛生管理から学びます。ライブ講義では質問の時間をたっぷりとり、つまずいたところをひとつずつ解決していきます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CURRICULUM ============ -->
+<section class="cream">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Curriculum</span>
+      <h2 class="sec-title">3ヶ月のカリキュラム</h2>
+      <svg class="sprig"><use href="#sprig"/></svg>
+    </div>
+
+    <div class="month-list">
+      <article class="month reveal">
+        <div class="month-head">
+          <div class="m"><small>Month</small><b>1</b></div>
+          <div>
+            <div class="theme">Touch</div>
+            <h3>知る・ふれる</h3>
+          </div>
+        </div>
+        <div class="month-body">
+          <ul>
+            <li>蒸留のしくみと、芳香蒸留水・精油の基礎</li>
+            <li>蒸留器の選び方と、各部の扱い方</li>
+            <li>火と蒸気を扱うための安全・衛生管理</li>
+            <li>はじめての蒸留（身近なハーブで）</li>
+          </ul>
+          <div class="tag-row"><span class="tag momo">オンライン講義</span><span class="tag">対面実習</span></div>
+        </div>
+      </article>
+      <article class="month reveal">
+        <div class="month-head">
+          <div class="m"><small>Month</small><b>2</b></div>
+          <div>
+            <div class="theme">Compare</div>
+            <h3>くらべる・深める</h3>
+          </div>
+        </div>
+        <div class="month-body">
+          <ul>
+            <li>葉・花・果皮・枝など、部位による香りの違い</li>
+            <li>植物の摘み方・下ごしらえと、香りを引き出すコツ</li>
+            <li>蒸留水の保存方法と、蒸留ノートのつけ方</li>
+            <li>いろいろな植物を蒸留して、くらべてみる</li>
+          </ul>
+          <div class="tag-row"><span class="tag momo">オンライン講義</span><span class="tag">自宅で実践</span></div>
+        </div>
+      </article>
+      <article class="month reveal">
+        <div class="month-head">
+          <div class="m"><small>Month</small><b>3</b></div>
+          <div>
+            <div class="theme">Live with</div>
+            <h3>暮らしに活かす</h3>
+          </div>
+        </div>
+        <div class="month-body">
+          <ul>
+            <li>ミスト・ルームスプレー・バスタイムなど、使い方のレシピ</li>
+            <li>一年の「蒸留カレンダー」づくり</li>
+            <li>講座のあとも自宅で続けるための計画</li>
+            <li>修了の蒸留会</li>
+          </ul>
+          <div class="tag-row"><span class="tag momo">オンライン講義</span><span class="tag">対面実習</span></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="rhythm reveal">
+      <h3>ひと月の学びの流れ</h3>
+      <ol>
+        <li>
+          <span class="step">動画</span>
+          <div><h4>講義動画で学ぶ</h4><p>いつでも何度でも。自分のペースで予習・復習。</p></div>
+        </li>
+        <li>
+          <span class="step">ライブ</span>
+          <div><h4>オンラインライブ</h4><p>月<span class="tbd">◯</span>回。解説と質問タイムで理解を深めます。</p></div>
+        </li>
+        <li>
+          <span class="step">自宅</span>
+          <div><h4>自宅で蒸留してみる</h4><p>学んだことを、ご自宅の台所で実践・記録。</p></div>
+        </li>
+        <li class="offline">
+          <span class="step">対面</span>
+          <div><h4>対面実習</h4><p>全<span class="tbd">◯</span>回。講師といっしょに手を動かして確かめます。</p></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTRUCTOR ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Instructor</span>
+      <h2 class="sec-title">講師紹介</h2>
+      <svg class="sprig"><use href="#sprig"/></svg>
+    </div>
+    <div class="teacher reveal">
+      <div class="teacher-photo">
+        <!-- 講師写真が届いたら <img src="images/teacher.jpg" alt="講師の写真"> に差し替え -->
+        <span>講師写真<br>（準備中）</span>
+      </div>
+      <div>
+        <div class="role">Distillation Teacher</div>
+        <h3><span class="tbd">講師のお名前</span></h3>
+        <a class="insta" href="https://www.instagram.com/alpiniazerumbet/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          @alpiniazerumbet
+        </a>
+        <p class="profile"><span class="tbd">プロフィール（経歴・蒸留をはじめたきっかけ・これまでの活動など）</span></p>
+        <div class="message">
+          <!-- 仮の文章です。講師ご本人の言葉に差し替えてください -->
+          <p>植物の香りは、その季節、その場所、その日にしか出会えないもの。蒸留をしていると、そんな当たり前のことに、毎回はっとさせられます。</p>
+          <p>むずかしい知識や特別な才能がなくても、蒸留は暮らしのなかで楽しめます。この3ヶ月で、あなたの暮らしのそばにある植物を、いっしょに香りの水にしていきましょう。</p>
+          <div class="sign"><span class="tbd">講師のお名前</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLAN / PRICE ============ -->
+<section class="leaf" id="plan">
+  <div class="wrap-narrow">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Course details</span>
+      <h2 class="sec-title">講座の詳細</h2>
+      <svg class="sprig"><use href="#sprig"/></svg>
+    </div>
+
+    <div class="plan reveal">
+      <div class="plan-head">
+        <span class="eyebrow">Botanical Distillation Course</span>
+        <h3>植物と暮らす 蒸留講座</h3>
+        <span class="period">3ヶ月コース</span>
+      </div>
+      <div class="price">
+        <div class="label">受講料</div>
+        <div class="amount"><span class="tbd">◯◯,◯◯◯</span>円<small>（税込）</small></div>
+        <div class="note">※蒸留器は別途ご購入ください<br class="sp-only">（推奨品をご案内します）</div>
+      </div>
+      <div class="spec">
+        <dl>
+          <dt>期間</dt>
+          <dd>3ヶ月（<span class="tbd">20XX年◯月◯日</span> 〜 <span class="tbd">◯月◯日</span>）</dd>
+          <dt>形式</dt>
+          <dd>オンライン講義（動画＋ライブ）× 対面実習のハイブリッド</dd>
+          <dt>オンライン</dt>
+          <dd>講義動画（期間中いつでも視聴可）<br>ライブ講義 月<span class="tbd">◯</span>回（Zoom）</dd>
+          <dt>対面実習</dt>
+          <dd>全<span class="tbd">◯</span>回<small>会場：<span class="tbd">◯◯◯（住所・最寄り駅）</span></small></dd>
+          <dt>定員</dt>
+          <dd><span class="tbd">◯</span>名<small>対面実習でひとりひとりに目が届くよう、少人数制です。</small></dd>
+          <dt>お支払い</dt>
+          <dd><span class="tbd">クレジットカード／銀行振込 など</span></dd>
+        </dl>
+      </div>
+      <div class="cta-wrap">
+        <!-- 申込フォームのURLが決まったら、href="#" を差し替え -->
+        <a href="#" class="btn js-apply">この講座に申し込む <span class="arrow">›</span></a>
+        <span class="btn-note">申込フォームへ移動します</span>
+      </div>
+    </div>
+
+    <div class="prepare reveal">
+      <h3>ご用意いただくもの</h3>
+      <ul>
+        <li>推奨の蒸留器（お申込み後にご案内します。すでにお持ちの方はご相談ください）</li>
+        <li>蒸留水を保存する遮光瓶</li>
+        <li>ご自宅のコンロ（ガス・IHなど、蒸留器に合った熱源）</li>
+        <li>蒸留する植物（身近なハーブでOK。選び方・入手方法も講座内でお伝えします）</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="wrap-narrow">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Q &amp; A</span>
+      <h2 class="sec-title">よくあるご質問</h2>
+      <svg class="sprig"><use href="#sprig"/></svg>
+    </div>
+    <div class="faq reveal">
+      <details>
+        <summary>蒸留はまったくはじめてです。ついていけますか？</summary>
+        <div class="a">はい、大丈夫です。蒸留器の扱い方や安全面の注意から、ひとつずつ順番にお伝えします。対面実習では講師が直接手元を見ながらお教えするので、はじめての方も安心してご参加ください。</div>
+      </details>
+      <details>
+        <summary>蒸留器はどんなものを買えばいいですか？</summary>
+        <div class="a">お申込み後に、講座で使う推奨の蒸留器をご案内します。すでに蒸留器をお持ちの方は、講座で使えるかどうか事前にご相談ください。</div>
+      </details>
+      <details>
+        <summary>蒸留する植物は、どうやって用意すればいいですか？</summary>
+        <div class="a">庭やベランダのハーブ、市販のフレッシュハーブなど、身近なもので始められます。講座のなかで、蒸留に向く植物の選び方や、採取してよい場所・植物の見分け方もお伝えします。</div>
+      </details>
+      <details>
+        <summary>ライブ講義に参加できない日があっても大丈夫ですか？</summary>
+        <div class="a"><span class="tbd">録画（アーカイブ）の有無と視聴期間をご記入ください</span></div>
+      </details>
+      <details>
+        <summary>対面実習に参加できない回があった場合は？</summary>
+        <div class="a"><span class="tbd">振替や補講の有無をご記入ください</span></div>
+      </details>
+      <details>
+        <summary>遠方に住んでいますが、受講できますか？</summary>
+        <div class="a">オンライン講義は全国どこからでもご参加いただけます。対面実習は<span class="tbd">◯◯（会場）</span>で行いますので、通える範囲かどうかご確認のうえお申込みください。</div>
+      </details>
+      <details>
+        <summary>蒸留したものを販売することはできますか？</summary>
+        <div class="a">本講座は、蒸留をご自身の暮らしで楽しむための講座です。蒸留水や精油を化粧品・雑貨・食品などとして販売する場合は、内容に応じて法令にもとづく許可や届出が必要になりますのでご注意ください。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final">
+  <div class="wrap-narrow">
+    <span class="eyebrow reveal">Join us</span>
+    <h2 class="sec-title reveal">季節がひとつ、<br>めぐるあいだに。</h2>
+    <svg class="sprig"><use href="#sprig"/></svg>
+    <p class="lead reveal">
+      3ヶ月後、あなたの台所には、<br>
+      自分の手で蒸留した香りの瓶が並んでいます。<br>
+      植物と暮らす毎日を、<br class="sp-only">ここからいっしょに始めませんか。
+    </p>
+    <div class="deadline reveal">募集締切：<span class="tbd">◯月◯日</span>／定員<span class="tbd">◯</span>名になり次第締切</div>
+    <div class="cta-wrap reveal">
+      <a href="#" class="btn js-apply">この講座に申し込む <span class="arrow">›</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">植物と暮らす 蒸留講座</div>
+  <div class="by">主宰：<span class="tbd">講師のお名前</span></div>
+  <div class="links">
+    <a href="https://www.instagram.com/alpiniazerumbet/" target="_blank" rel="noopener">Instagram</a>
+    <!-- 直接申込・決済を受け付けるため、特定商取引法に基づく表記は必須 -->
+    <a href="#">特定商取引法に基づく表記</a>
+    <a href="#">プライバシーポリシー</a>
+  </div>
+  <div class="copy">© <span class="tbd">講師のお名前</span> All rights reserved.</div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <a href="#plan" class="btn">講座の詳細・お申込み <span class="arrow">›</span></a>
+</div>
+
+<script>
+  // 申込フォームのURL（決まったらここに入れると、すべての申込ボタンに反映されます）
+  var APPLY_URL = "";
+  document.querySelectorAll(".js-apply").forEach(function(a){
+    if(APPLY_URL){ a.href = APPLY_URL; a.target = "_blank"; a.rel = "noopener"; }
+    else { a.addEventListener("click", function(e){ e.preventDefault(); alert("申込フォームは準備中です"); }); }
+  });
+
+  // スクロールで要素をふわっと表示
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+    },{rootMargin:"0px 0px -8% 0px"});
+    document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
+
+    // ヒーローを過ぎたら下部に申込ボタン、詳細・最終セクションでは隠す
+    var sticky = document.getElementById("stickyCta");
+    var hideZones = new Set();
+    var heroOut = false;
+    function update(){ sticky.classList.toggle("show", heroOut && hideZones.size === 0); }
+    new IntersectionObserver(function(es){ heroOut = !es[0].isIntersecting; update(); }).observe(document.querySelector(".hero"));
+    var zoneIo = new IntersectionObserver(function(es){
+      es.forEach(function(e){ e.isIntersecting ? hideZones.add(e.target) : hideZones.delete(e.target); });
+      update();
+    });
+    document.querySelectorAll("#plan, .final").forEach(function(el){ zoneIo.observe(el); });
+  } else {
+    document.querySelectorAll(".reveal").forEach(function(el){ el.classList.add("in"); });
+  }
+</script>
+</body>
+</html>
